@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active hr{
+    @apply block
+}
+
+*{
+    font-family: Outfit ;
+}
+
+/* directives :
+1.@apply
+2.@layer
+
+*/
+
+::-webkit-scrollbar{
+    @apply hidden;
+}
+
+@media (max-width:740px) {
+
+    .active p{
+        @apply text-white bg-primary
+    }
+    
+}
